@@ -3,3 +3,10 @@
 # Unignore
 !.gitignore
 
+# Vim
+!.vim/
+!.vimrc
+
+# Zsh
+!.zshrc
+!.oh-my-zsh/
