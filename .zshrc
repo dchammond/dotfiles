@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-. /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+test -e "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh" && . "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -118,7 +118,5 @@ export PATH="$PATH:/usr/local/opt"
 export EDITOR="/usr/local/bin/vim"
 export SHELL="/usr/local/bin/zsh"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
-export AF_PATH="/usr/local"
-export LD_LIBRARY_PATH="$AF_PATH/lib:$LD_LIBRARY_PATH"
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
