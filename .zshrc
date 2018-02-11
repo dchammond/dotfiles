@@ -1,11 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# HOMEBREW options
-
-# HOMEBREW github API token
-export HOMEBREW_GITHUB_API_TOKEN=fce5d7272cac16d3436948d70ab5b5783a3cbabd
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
