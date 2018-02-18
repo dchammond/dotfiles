@@ -6,6 +6,7 @@
 # Vim
 !.vim/
 !.vim/**
+.vim/plugged
 !.vimrc
 
 # Zsh
