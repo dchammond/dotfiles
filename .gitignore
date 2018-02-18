@@ -4,7 +4,8 @@
 !.gitignore
 
 # Vim
-!.vim
+!.vim/
+!.vim/**
 !.vimrc
 
 # Zsh
