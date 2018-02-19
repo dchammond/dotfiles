@@ -135,3 +135,5 @@ test -e /usr/local/bin/vim \
 test -e /usr/local/opt/nvm/nvm.sh \
     && export NVM_DIR=~/.nvm \
     && . /usr/local/opt/nvm/nvm.sh
+
+return 0;
