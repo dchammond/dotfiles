@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 test -e "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh" && . "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh"
+test -e "/home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh" && export PATH=$PATH:/home/dillonh2/python-env/bin && . "/home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -99,7 +100,7 @@ alias pip3up="pip3 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip3 
 alias j="just"
 export PATH="/Users/Dillon/.cargo/bin:/usr/local/sbin:$PATH"
 export RUST_SRC_PATH="/Users/Dillon/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
-eval "$(thefuck --alias)"
+command -v fuck && eval "$(thefuck --alias)"
 export TERM=xterm-256color
 export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include 
 export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
@@ -114,4 +115,4 @@ export EDITOR="/usr/local/bin/vim"
 export SHELL="/usr/local/bin/zsh"
 export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+test -e "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"
