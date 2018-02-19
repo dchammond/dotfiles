@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/dillon/Library/Mobile Documents/com~apple~CloudDocs/UIUC/CS 126/sp18-cs126/_class'
-let g:netrw_dirhist_2='/Users/dillon/Library/Mobile Documents/com~apple~CloudDocs/UIUC/CS 126/sp18-cs126/_class/worrisome_students'
-let g:netrw_dirhist_3='/Users/dillon/Desktop/SatDev/LAICE_CDH/src/hm_d'
