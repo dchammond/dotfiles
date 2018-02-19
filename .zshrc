@@ -130,7 +130,7 @@ test -e /usr/local/bin/vim \
 
 export SHELL="/usr/bin/zsh"
 test -e /usr/local/bin/vim \
-    && export EDITOR="/usr/local/bin/zsh"
+    && export SHELL="/usr/local/bin/zsh"
 
 test -e /usr/local/opt/nvm/nvm.sh \
     && export NVM_DIR=~/.nvm \
