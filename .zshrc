@@ -79,40 +79,59 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh" && . "/usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh"
-test -e "/home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh" && export PATH=$PATH:/home/dillonh2/python-env/bin && . "/home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh"
+test -e /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh \
+    && . /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e /home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh \
+    && export PATH=$PATH:/home/dillonh2/python-env/bin \
+    && . /home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
+
+test -e ~/.iterm2_shell_integration.zsh \
+    && source ~/.iterm2_shell_integration.zsh
 
 # My aliases
-alias brews='brew list -1'
-alias buball='brew upgrade; brew cleanup; brew doctor'
+command -v brew > /dev/null \
+    && alias brews='brew list -1' \
+    && alias buball='brew upgrade; brew cleanup; brew doctor' \
+    && alias buses='brew uses --installed --recursive --include-build --include-optional' \
+    && export PATH=$PATH:/usr/local/opt
+
 alias cd..='cd ..'
-alias rup='rustup self update && rustup update && rustup run nightly cargo install-update -a'
+
+command -v rustup > /dev/null \
+    && alias rup='rustup self update && rustup update && rustup run nightly cargo install-update -a'
+
 alias jobs='jobs -l'
 alias gdeletelocal='git branch -D'
 alias gdeleteremote='git push origin --delete'
 alias gbranchlocal='git checkout -b'
 alias gbranchremote='git push -u origin'
-alias buses='brew uses --installed --recursive --include-build --include-optional'
-alias pip2up="pip2 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip2 install --upgrade"
-alias pip3up="pip3 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip3 install --upgrade"
-alias j="just"
-export PATH="/Users/Dillon/.cargo/bin:/usr/local/sbin:$PATH"
-export RUST_SRC_PATH="/Users/Dillon/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
-command -v fuck && eval "$(thefuck --alias)"
+
+command -v pip2 > /dev/null \
+    && alias pip2up="pip2 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip2 install --upgrade"\
+    && alias pip3up="pip3 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip3 install --upgrade"
+
+test -e ~/.cargo \
+    && export PATH=$PATH:~/.cargo/bin \
+    && export CARGO_HOME=~/.cargo/
+
+
+test -e ~/.rustup \
+    && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+
+command -v fuck > /dev/null \
+    && eval "$(thefuck --alias)"
+
 export TERM=xterm-256color
-export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include 
-export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig"
-export CARGO_HOME="/Users/Dillon/.cargo/"
-export PATH="$PATH:/Users/Dillon"
-export PATH="$HOME/opt/cross/bin:$PATH"
-export PATH="$PATH:/usr/local/opt"
-export EDITOR="/usr/local/bin/vim"
-export SHELL="/usr/local/bin/zsh"
-export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
-export NVM_DIR="$HOME/.nvm"
-test -e "/usr/local/opt/nvm/nvm.sh" && . "/usr/local/opt/nvm/nvm.sh"
+
+export EDITOR="/usr/bin/vim"
+test -e /usr/local/bin/vim \
+    && export EDITOR="/usr/local/bin/vim"
+
+export SHELL="/usr/bin/zsh"
+test -e /usr/local/bin/vim \
+    && export EDITOR="/usr/local/bin/zsh"
+
+test -e /usr/local/opt/nvm/nvm.sh \
+    && export NVM_DIR=~/.nvm \
+    && . /usr/local/opt/nvm/nvm.sh
