@@ -98,6 +98,14 @@ command -v brew > /dev/null \
 
 alias cd..='cd ..'
 
+test -e ~/.cargo \
+    && export PATH=$PATH:~/.cargo/bin \
+    && export CARGO_HOME=~/.cargo/
+
+
+test -e ~/.rustup \
+    && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+
 command -v rustup > /dev/null \
     && alias rup='rustup self update && rustup update && rustup run nightly cargo install-update -a'
 
@@ -111,13 +119,6 @@ command -v pip2 > /dev/null \
     && alias pip2up="pip2 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip2 install --upgrade"\
     && alias pip3up="pip3 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip3 install --upgrade"
 
-test -e ~/.cargo \
-    && export PATH=$PATH:~/.cargo/bin \
-    && export CARGO_HOME=~/.cargo/
-
-
-test -e ~/.rustup \
-    && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 
 command -v fuck > /dev/null \
     && eval "$(thefuck --alias)"
