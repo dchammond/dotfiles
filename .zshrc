@@ -79,13 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-test -e /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh \
-    && . /usr/local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-
-test -e /home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh \
-    && export PATH=$PATH:/home/dillonh2/python-env/bin \
-    && . /home/dillonh2/python-env/lib/python3.4/site-packages/powerline/bindings/zsh/powerline.zsh
-
 test -e ~/.iterm2_shell_integration.zsh \
     && source ~/.iterm2_shell_integration.zsh
 
