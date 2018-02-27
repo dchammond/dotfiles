@@ -130,6 +130,8 @@ test -e /usr/local/opt/nvm/nvm.sh \
     && export NVM_DIR=~/.nvm \
     && . /usr/local/opt/nvm/nvm.sh
 
+export DEFAULT_USER=dillon
+
 test -e /class/cs225/etc/semester \
     && source /class/cs225/etc/semester > /dev/null \
     && export PATH=/class/cs225/llvm/bin:$PATH:/class/cs225/software/graphviz-2.38.0/bin:/class/cs225/software/lein-2.5.3/bin
