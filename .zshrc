@@ -131,7 +131,11 @@ test -e /usr/local/opt/nvm/nvm.sh \
     && . /usr/local/opt/nvm/nvm.sh
 
 test -e /class/cs225/etc/semester \
-    && source /class/cs225/etc/semester \
+    && source /class/cs225/etc/semester > /dev/null \
     && export PATH=/class/cs225/llvm/bin:$PATH:/class/cs225/software/graphviz-2.38.0/bin:/class/cs225/software/lein-2.5.3/bin
+
+test -e /class/cs233/setup \
+    && source /class/cs233/setup > /dev/null \
+    && export PATH=/class/cs233/Linux/bin:$PATH
 
 return 0;
