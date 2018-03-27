@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 " Plug 'vim-syntastic/syntastic'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " CtrlP
@@ -27,5 +28,6 @@ set number
 set cursorline
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch  " highlight matches
+set updatetime=100
 inoremap kj <esc>
 colorscheme codedark
