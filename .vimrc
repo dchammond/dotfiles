@@ -24,6 +24,9 @@ let g:ctrlp_working_path_mode = 'ra' " Goes up directories till it finds .git/.s
 " let g:syntastic_check_on_wq = 0
 
 syntax enable
+set laststatus=2
+set statusline=%f
+set ruler
 set number
 set cursorline
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
