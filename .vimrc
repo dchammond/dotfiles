@@ -24,6 +24,7 @@ let g:ctrlp_working_path_mode = 'ra' " Goes up directories till it finds .git/.s
 " let g:syntastic_check_on_wq = 0
 
 syntax enable
+set backspace=indent,eol,start
 set laststatus=2
 set statusline=%f
 set ruler
