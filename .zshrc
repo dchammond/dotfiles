@@ -120,6 +120,9 @@ command -v pip > /dev/null \
 command -v fuck > /dev/null \
     && eval "$(thefuck --alias)"
 
+command -v /usr/local/bin/ctags > /dev/null \
+    && alias ctags="/usr/local/bin/ctags"
+
 export TERM=xterm-256color
 
 export EDITOR="/usr/bin/vim"
