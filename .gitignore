@@ -13,3 +13,6 @@
 # Zsh
 !.zshrc
 !.oh-my-zsh
+
+# Alacritty
+!.config/alacritty/alacritty.yml
