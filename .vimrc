@@ -35,6 +35,6 @@ set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch  " highlight matches
 set updatetime=100
 inoremap kj <esc>
-map <F7> :w !pbcopy <CR><CR>
-vmap <F7> "*y
+vmap <C-c> "*y <CR><CR>
+vmap <C-v> :!pbpaste <CR>
 colorscheme codedark
