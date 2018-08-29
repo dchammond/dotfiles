@@ -111,13 +111,13 @@ alias gbranchlocal='git checkout -b'
 alias gbranchremote='git push -u origin'
 
 command -v pip2 > /dev/null \
-    && alias pip2up="pip2 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip2 install --upgrade"
+    && alias pip3up="pip2 list --format=freeze --outdated | cut -d'=' -f1 | xargs pip2 install --user --upgrade"
 
 command -v pip3 > /dev/null \
-    && alias pip3up="pip3 list --format=legacy --outdated | cut -d' ' -f1 | xargs pip3 install --upgrade"
+    && alias pip3up="pip3 list --format=freeze --outdated | cut -d'=' -f1 | xargs pip3 install --user --upgrade"
 
 command -v pip > /dev/null \
-    && alias pipup="pip list --format=legacy --outdated | cut -d' ' -f1 | xargs pip install --upgrade"
+    && alias pipup="pip list --format=freeze --outdated | cut -d'=' -f1 | xargs pip install --user --upgrade"
 
 command -v fuck > /dev/null \
     && eval "$(thefuck --alias)"
