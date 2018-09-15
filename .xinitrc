@@ -58,4 +58,5 @@ fi
 export TERMINAL=termite
 xbindkeys
 xrandr --dpi 125.37
+compton -b
 exec /usr/bin/i3
