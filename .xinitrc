@@ -60,5 +60,5 @@ xbindkeys
 xrandr --dpi 125.37
 compton --config ~/.config/compton/compton.conf -b
 ~/.fehbg &
-# exec --no-startup-id xautolock -time 10 "i3lock -c 0a0a0a"
+xautolock -time 10 "i3lock -c 0a0a0a" &
 exec /usr/bin/i3
