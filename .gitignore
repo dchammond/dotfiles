@@ -21,6 +21,7 @@
 !.config/compton
 !.config/fontconfig
 !.config/i3
+!.config/i3status
 !.config/termite
 !.config/yay
 !.xbindkeysrc
