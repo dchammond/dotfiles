@@ -18,6 +18,7 @@
 !.config/alacritty/alacritty.yml
 
 # Arch config
+!.config/compton
 !.config/fontconfig
 !.config/i3
 !.config/termite
