@@ -16,3 +16,11 @@
 
 # Alacritty
 !.config/alacritty/alacritty.yml
+
+# Arch config
+!.config/
+!.config/**
+!.xbindkeysrc
+!.xinitrc
+!.Xauthority
+
