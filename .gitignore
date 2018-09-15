@@ -1,7 +1,7 @@
 # Ignore everything by default
 *
 # Unignore
-!.gitignore
+!.git*
 
 # Vim
 !.vim/
