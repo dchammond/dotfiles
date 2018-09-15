@@ -102,7 +102,7 @@ test -e ~/.rustup \
     && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 
 command -v rustup > /dev/null \
-    && alias rup='rustup self update && rustup update && rustup run nightly cargo install-update -a'
+    && alias rup='rustup update && cargo install-update -a'
 
 alias jobs='jobs -l'
 alias gdeletelocal='git branch -D'
