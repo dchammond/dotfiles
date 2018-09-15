@@ -18,8 +18,10 @@
 !.config/alacritty/alacritty.yml
 
 # Arch config
-!.config/
-!.config/**
+!.config/fontconfig
+!.config/i3
+!.config/termite
+!.config/yay
 !.xbindkeysrc
 !.xinitrc
 !.Xauthority
