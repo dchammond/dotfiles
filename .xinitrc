@@ -59,4 +59,5 @@ export TERMINAL=termite
 xbindkeys
 xrandr --dpi 125.37
 compton --config ~/.config/compton/compton.conf -b
+~/.fehbg &
 exec /usr/bin/i3

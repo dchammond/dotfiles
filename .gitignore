@@ -18,11 +18,13 @@
 !.config/alacritty/alacritty.yml
 
 # Arch config
-!.config/compton
-!.config/fontconfig
-!.config/i3
-!.config/i3status
-!.config/termite
-!.config/yay
+!.config/compton/*
+!.config/fontconfig/*
+!.config/i3/*
+!.config/i3status/*
+!.config/termite/*
+!.config/yay/*
 !.xbindkeysrc
 !.xinitrc
+!.fehbg
+!Wallpaper/*
