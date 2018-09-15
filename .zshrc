@@ -127,6 +127,9 @@ command -v /usr/local/bin/ctags > /dev/null \
 
 export TERM=xterm-256color
 
+export LANG=en_US.UTF-8
+export LC_CTYPE=$LANG
+
 export EDITOR="/usr/bin/vim"
 test -e /usr/local/bin/vim \
     && export EDITOR="/usr/local/bin/vim"
