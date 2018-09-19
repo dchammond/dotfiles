@@ -73,6 +73,16 @@
 "xbacklight -dec 10"
   XF86MonBrightnessDown
 
+# Volume control
+"amixer set Master 5%+"
+    XF86AudioRaiseVolume
+
+"amixer set Master 5%-"
+    XF86AudioLowerVolume
+
+"amixer set Master toggle"
+    XF86AudioMute
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
