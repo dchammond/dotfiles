@@ -49,7 +49,7 @@ plugins=(git ruby golang django scala gem history history-substring-search termi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin"
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -97,6 +97,7 @@ test -e ~/.cargo \
     && export PATH=$PATH:~/.cargo/bin \
     && export CARGO_HOME=~/.cargo/
 
+export PATH=$PATH:~/.local/bin
 
 test -e ~/.rustup \
     && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
