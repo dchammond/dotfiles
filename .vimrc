@@ -8,6 +8,7 @@ Plug 'tpope/vim-commentary'
 " Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'zxqfl/tabnine-vim'
 call plug#end()
 
 " CtrlP
