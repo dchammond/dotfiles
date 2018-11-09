@@ -33,6 +33,8 @@ set statusline=%f
 set ruler
 set number
 set cursorline
+set ai
+set si
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch  " highlight matches
 set updatetime=100
