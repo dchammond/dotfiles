@@ -156,4 +156,6 @@ test -e /class/cs233/setup \
 test -e /usr/bin/firefox \
     && export BROWSER=firefox
 
+alias replace_hooks="rm .git/hooks/* && ln -s ~/.vim/hooks/* .git/hooks && .git/hooks/ctags"
+
 return 0;
