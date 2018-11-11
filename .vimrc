@@ -8,12 +8,18 @@ Plug 'tpope/vim-commentary'
 " Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra' " Goes up directories till it finds .git/.svn/etc...
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='deus'
 
 " Syntastic
 " set statusline+=%#warningmsg#
