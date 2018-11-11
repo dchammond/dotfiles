@@ -153,4 +153,7 @@ test -e /class/cs233/setup \
     && source /class/cs233/setup > /dev/null \
     && export PATH=/class/cs233/Linux/bin:$PATH
 
+test -e /usr/bin/firefox \
+    && export BROWSER=firefox
+
 return 0;
