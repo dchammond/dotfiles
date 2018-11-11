@@ -9,7 +9,7 @@ ip = true
 speed_up = false
 graph_up = false
 speed_down = false
-interval = 30
+interval = 15
 
 [[block]]
 block = "battery"
