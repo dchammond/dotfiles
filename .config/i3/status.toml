@@ -2,35 +2,56 @@ theme = "solarized-dark"
 icons = "awesome"
 
 [[block]]
+block = "net"
+device = "wlp3s0"
+ssid = true
+ip = true
+speed_up = false
+graph_up = false
+speed_down = false
+interval = 10
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+
+[[block]]
 block = "disk_space"
 path = "/"
 alias = "/"
 info_type = "available"
 unit = "GB"
-interval = 20
-warning = 20.0
-alert = 10.0
+
+[[block]]
+block = "cpu"
+interval = 3
+warning  = 75
+critical = 90
+frequency = true
 
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
-
-[[block]]
-block = "cpu"
-interval = 1
-
-[[block]]
-block = "load"
-interval = 1
-format = "{1m}"
+format_mem = "{Mum}MB"
+clickable = false
+interval = 3
+warning_mem = 75
+critical_mem = 90
 
 [[block]]
 block = "sound"
 
 [[block]]
+block = "music"
+player = "spotify"
+marquee = true
+marquee_interval = 2
+marquee_speed = 0.2
+buttons = ["prev", "play", "next"]
+
+[[block]]
 block = "time"
-interval = 60
-format = "%a %d/%m %R"
+interval = 1
+format = "%a %b %d %r"
 

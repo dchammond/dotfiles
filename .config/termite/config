@@ -3,8 +3,8 @@
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = Liberation Mono for Powerline 10
-#font = Droid Sans Mono for Powerline 10
+#font = Liberation Mono for Powerline 10
+font = Dejavu Sans Mono for Powerline 10
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
