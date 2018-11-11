@@ -8,13 +8,19 @@ Plug 'tpope/vim-commentary'
 " Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'zxqfl/tabnine-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'chrisbra/colorizer'
 call plug#end()
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra' " Goes up directories till it finds .git/.svn/etc...
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='deus'
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -26,12 +32,16 @@ let g:ctrlp_working_path_mode = 'ra' " Goes up directories till it finds .git/.s
 " let g:syntastic_check_on_wq = 0
 
 syntax enable
+set encoding=utf-8
+set fileencoding=utf-8
 set backspace=indent,eol,start
 set laststatus=2
 set statusline=%f
 set ruler
 set number
 set cursorline
+set ai
+set si
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch  " highlight matches
 set updatetime=100
