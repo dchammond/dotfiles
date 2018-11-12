@@ -48,7 +48,7 @@ block = "music"
 player = "spotify"
 marquee = true
 marquee_interval = 10
-marquee_speed = 0.2
+marquee_speed = 0.5
 buttons = ["prev", "play", "next"]
 
 [[block]]
