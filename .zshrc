@@ -49,7 +49,7 @@ plugins=(git ruby golang django scala gem history history-substring-search termi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin"
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -97,12 +97,13 @@ test -e ~/.cargo \
     && export PATH=$PATH:~/.cargo/bin \
     && export CARGO_HOME=~/.cargo/
 
+export PATH=$PATH:~/.local/bin
 
 test -e ~/.rustup \
     && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 
 command -v rustup > /dev/null \
-    && alias rup='rustup self update && rustup update && rustup run nightly cargo install-update -a'
+    && alias rup='rustup update && cargo install-update -a'
 
 alias jobs='jobs -l'
 alias gdeletelocal='git branch -D'
@@ -127,6 +128,9 @@ command -v /usr/local/bin/ctags > /dev/null \
 
 export TERM=xterm-256color
 
+export LANG=en_US.UTF-8
+export LC_CTYPE=$LANG
+
 export EDITOR="/usr/bin/vim"
 test -e /usr/local/bin/vim \
     && export EDITOR="/usr/local/bin/vim"
@@ -150,5 +154,8 @@ test -e /class/cs233/setup \
     && export PATH=/class/cs233/Linux/bin:$PATH
 
 export LANG=en_US.UTF-8
+
+test -e /usr/bin/firefox \
+    && export BROWSER=firefox
 
 return 0;

@@ -5,6 +5,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/dillon/.gitignore_global
+	autocrlf = false
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
