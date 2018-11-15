@@ -153,6 +153,8 @@ test -e /class/cs233/setup \
     && source /class/cs233/setup > /dev/null \
     && export PATH=/class/cs233/Linux/bin:$PATH
 
+export LANG=en_US.UTF-8
+
 test -e /usr/bin/firefox \
     && export BROWSER=firefox
 
