@@ -34,7 +34,7 @@ frequency = true
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mum}MB"
+format_mem = "{Mum}MB/{MTm}MB"
 clickable = false
 interval = 5
 warning_mem = 75
