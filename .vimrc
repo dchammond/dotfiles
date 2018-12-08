@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chrisbra/colorizer'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " CtrlP
