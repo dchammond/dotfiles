@@ -93,6 +93,9 @@ command -v brew > /dev/null \
 
 alias cd..='cd ..'
 
+test -e ~/.bin \
+    && export PATH=$PATH:~/.bin
+
 test -e ~/.cargo \
     && export PATH=$PATH:~/.cargo/bin \
     && export CARGO_HOME=~/.cargo/
