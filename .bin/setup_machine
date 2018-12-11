@@ -20,8 +20,8 @@ install_packages()
 # Certain packages look in places like /etc for configs
 link_files()
 {
-    sudo rm -f /etc/default/tlp
-    sudo ln /home/$USER/.config/tlp/tlp
+    sudo rm -f /etc/default/tlp && sudo ln /home/$USER/.config/tlp/tlp /etc/default/tlp
+    sudo rm -f /etc/fontconfig/local.conf && sudo ln /home/$USER/.config/fontconfig/local.conf 
 }
 
 install_packages
