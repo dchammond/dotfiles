@@ -43,13 +43,13 @@ critical_mem = 90
 [[block]]
 block = "sound"
 
-[[block]]
-block = "music"
-player = "spotify"
-marquee = true
-marquee_interval = 10
-marquee_speed = 0.5
-buttons = ["prev", "play", "next"]
+# [[block]]
+# block = "music"
+# player = "spotify"
+# marquee = true
+# marquee_interval = 10
+# marquee_speed = 0.5
+# buttons = ["prev", "play", "next"]
 
 [[block]]
 block = "time"
