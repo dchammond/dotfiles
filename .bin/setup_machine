@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -e
+
+install_rust()
+{
+    curl https://sh.rustup.rs -sSf | sh
+    rustup install nightly
+    rustup component add clippy
+    rustup component add rustfmt
+    cargo install cargo-update
+}
+
+install_packages()
+{
+    /home/$USER/.bin/yay_snapshot restore
+    install_rust
+}
+
+# Certain packages look in places like /etc for configs
+link_files()
+{
+    sudo rm -f /etc/default/tlp
+    sudo ln /home/$USER/.config/tlp/tlp
+}
+
+install_packages
+
+link_files
+
+

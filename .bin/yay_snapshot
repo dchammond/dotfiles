@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -e
+
+save() {
+    yay -Qqet | grep -v "$(yay -Qqg base)" > /home/$USER/.bin/pkglist
+}
+
+restore() {
+    cat /home/dillon/.bin/pkglist | grep -v "$(yay -Qqet)" | yay -S -
+}
+
+case "$1" in
+save | restore )
+    $1
+    ;;
+*   )
+    echo "valid commands: save, restore" >&2
+    exit 1
+esac
