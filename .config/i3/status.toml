@@ -26,7 +26,7 @@ interval = 60
 
 [[block]]
 block = "cpu"
-interval = 5
+interval = 10
 warning  = 75
 critical = 90
 frequency = true
@@ -36,7 +36,7 @@ block = "memory"
 display_type = "memory"
 format_mem = "{Mum}MB/{MTm}MB"
 clickable = false
-interval = 5
+interval = 10
 warning_mem = 75
 critical_mem = 90
 
