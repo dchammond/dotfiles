@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+yay -Qii "$1" | grep "Req" | sed -e 's/Required By     : //g'
