@@ -34,9 +34,7 @@ pacgraph
 patch
 pkgconf
 powerline
-python-pandas
-python-scikit-learn
-python-sympy
+python-numpy
 screen
 spotify
 tcpdump
@@ -94,5 +92,6 @@ xorg-xpr
 xorg-xrefresh
 xorg-xwd
 xorg-xwud
+xsel
 yay-bin
 zsh
