@@ -57,10 +57,11 @@ source $ZSH/oh-my-zsh.sh
 
 autoload -U promptinit; promptinit
 
-PURE_PROMPT_SYMBOL=">"
-PURE_PROMPT_VICMD_SYMBOL="<"
+PURE_PROMPT_SYMBOL='%(?.%F{green}.%F{red})>%f '
+PURE_PROMPT_VICMD_SYMBOL='%(?.%F{green}.%F{red})<%f '
 
 prompt pure
+PROMPT='%(1j.[%j] .)${PURE_PROMPT_SYMBOL}'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
