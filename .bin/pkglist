@@ -9,8 +9,8 @@ cmake
 compton
 ctags
 dmidecode
+docker-compose
 dos2unix
-fakeroot
 firefox
 flex
 fluxgui
