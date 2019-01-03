@@ -1,5 +1,6 @@
 alsa-firmware
 amd-ucode
+arp-scan
 arrayfire
 autoconf
 automake
