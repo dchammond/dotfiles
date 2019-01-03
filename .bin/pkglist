@@ -31,6 +31,7 @@ make
 neofetch
 network-manager-applet
 openssh
+p7zip
 pacgraph
 patch
 pkgconf
