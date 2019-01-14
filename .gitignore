@@ -18,7 +18,7 @@
 !.config/alacritty/alacritty.yml
 
 # Arch config
-!.bin/
+!.bin/*
 !.config/autostart*
 !.config/compton/*
 !.config/fontconfig/*
