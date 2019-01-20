@@ -11,6 +11,7 @@ ctags
 dmidecode
 docker-compose
 dos2unix
+fff
 firefox
 flex
 fluxgui
@@ -23,12 +24,11 @@ htop
 i3-gaps
 i3status-rust-git
 intel-ucode
-lib32-expat
-lib32-libxext
 libfec-git
 libreoffice-fresh
 lldb
 llvm
+ltspice
 make
 neofetch
 network-manager-applet
@@ -64,6 +64,7 @@ tigervnc
 tldr
 tlp
 tmux
+tree
 unzip
 vlc
 wget
