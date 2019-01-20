@@ -1,1 +1,6 @@
-yay --editmenu "$@"
+if [ -z "$1" ]
+then
+    yay --editmenu -Syu
+else
+    yay --editmenu "$@"
+fi
