@@ -30,6 +30,7 @@ lldb
 llvm
 ltspice
 make
+mtd-utils
 neofetch
 network-manager-applet
 openssh
