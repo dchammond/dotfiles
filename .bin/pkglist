@@ -12,6 +12,7 @@ ctags
 dmidecode
 docker-compose
 dos2unix
+dpkg
 fff
 firefox
 flex
@@ -27,6 +28,7 @@ i3status-rust-git
 intel-ucode
 libfec-git
 libreoffice-fresh
+libudev0-shim
 lldb
 llvm
 ltspice
@@ -42,6 +44,7 @@ powerline
 projectlibre
 python-numpy
 python2-lxml
+quartus-free
 radare2
 reflector
 screen
