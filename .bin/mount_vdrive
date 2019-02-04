@@ -1,0 +1,3 @@
+read -p "Enter password: " PASS
+
+sudo mount -t cifs //engr-ews-homes.engr.illinois.edu/classes/cubesat /mnt/vdrive -o username=dillonh2,password=$PASS
