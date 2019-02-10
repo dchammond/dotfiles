@@ -36,3 +36,4 @@
 # Things that git should ignore but isn't
 /.cargo
 /git
+/.cache
