@@ -1,13 +1,15 @@
 # Ignore everything by default
 *
+# Allow descent into folders
+!*/
+
 # Unignore
-!.git*
+!/.git*
 
 # Vim
-!.vim/
-!.vim/**
-.vim/plugged
-.vim/.netrwhist
+!/.vim/
+/.vim/plugged
+/.vim/.netrwhist
 !.vimrc
 
 # Zsh
@@ -15,18 +17,23 @@
 !.oh-my-zsh
 
 # Alacritty
-!.config/alacritty/alacritty.yml
+!/.config/alacritty/alacritty.yml
 
 # Arch config
-!.bin/
-!.config/autostart*
-!.config/compton/*
-!.config/fontconfig/*
-!.config/i3/*
-!.config/termite/*
-!.config/tlp/*
-!.config/yay/*
+!/.bin/*
+!/.config/autostart*
+!/.config/compton/*
+!/.config/fontconfig/*
+!/.config/i3/*
+!/.config/termite/*
+!/.config/tlp/*
+!/.config/yay/*
 !.xbindkeysrc
 !.xinitrc
 !.fehbg
-!Wallpaper/*
+!/Wallpaper/*
+
+# Things that git should ignore but isn't
+/.cargo
+/git
+/.cache
