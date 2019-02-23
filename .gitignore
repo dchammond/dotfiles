@@ -1,7 +1,5 @@
 # Ignore everything by default
 *
-# Allow descent into folders
-!*/
 
 # Unignore
 !/.git*
