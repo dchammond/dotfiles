@@ -1,4 +1,4 @@
 # Force linux line endings
+* text eol=lf
 *.png binary
 *.jpg binary
-* text eol=lf
