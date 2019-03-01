@@ -7,8 +7,10 @@ if [ ! -z $2 ]; then
         cp "${f}" /home/dillon/.bin/pandoc_template/
     done
     cd /home/dillon/.bin/pandoc_template
-    pandoc --template lassi_template.tex -o "${1}" "${@:2}"
-    mv "${1}" "${OG_DIR}"/"${1}"
+    pandoc -s -f markdown -t latex --template lassi_template.tex "${@:2}" | ./fix_table.py > out.ltx
+    pdflatex out.ltx > /dev/null && pdflatex out.ltx > /dev/null
+    mv out.pdf "${OG_DIR}"/"${1}"
+    rm -f out*
     for f in "${@:2}"; do
         rm "${f}"
     done
