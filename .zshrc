@@ -173,6 +173,7 @@ test -e /usr/bin/firefox \
 alias replace_hooks="rm .git/hooks/* && ln -s ~/.vim/hooks/* .git/hooks && .git/hooks/ctags"
 
 export FFF_CD_FILE=~/.fff_d
+export FFF_TRASH=/tmp
 f() { fff "$@"; cd "$(cat ~/.fff_d)"; }
 
 return 0;
