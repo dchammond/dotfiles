@@ -6,6 +6,7 @@ aurphan
 autoconf
 automake
 bison
+ccstudio
 clinfo
 compton
 ctags
@@ -13,11 +14,11 @@ dmidecode
 docker-compose
 dos2unix
 dpkg
+exfat-utils
 fff
 firefox
 flex
 fluxgui
-gdb
 glxinfo
 gnuradio
 gotop-bin
@@ -29,8 +30,8 @@ intel-ucode
 libfec-git
 libreoffice-fresh
 libudev0-shim
-lldb
 llvm
+lrzsz
 ltspice
 make
 mtd-utils
@@ -39,6 +40,7 @@ network-manager-applet
 openssh
 p7zip
 pacgraph
+pandoc
 patch
 powerline
 projectlibre
@@ -47,8 +49,12 @@ python2-lxml
 quartus-free
 radare2
 reflector
+retext
+rustup
 screen
 scrot
+sdl2_gfx
+sdl2_ttf
 spim-svn
 spotify
 tcpdump
