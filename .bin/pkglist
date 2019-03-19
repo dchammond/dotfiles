@@ -1,3 +1,4 @@
+acpi_call
 alsa-firmware
 amd-ucode
 arp-scan
@@ -8,6 +9,7 @@ automake
 bison
 ccstudio
 clinfo
+cloc
 compton
 ctags
 dmidecode
@@ -56,6 +58,7 @@ screen
 scrot
 sdl2_gfx
 sdl2_ttf
+socat
 spim-svn
 spotify
 tcpdump
