@@ -6,12 +6,14 @@ arrayfire
 aurphan
 autoconf
 automake
+bc
 bison
 ccstudio
 clinfo
 cloc
 compton
 ctags
+diffpdf
 dmidecode
 docker-compose
 dos2unix
@@ -117,6 +119,7 @@ xorg-xpr
 xorg-xrefresh
 xorg-xwd
 xorg-xwud
+xpdf
 xsel
 yay-bin
 zip
