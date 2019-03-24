@@ -4,6 +4,6 @@ PATH="/usr/local/bin:$PATH"
 dir="`git rev-parse --git-dir`"
 trap 'rm -f "$dir/$$.tags"' EXIT
 cd $dir/../
-git ls-files | \
+git ls-files --recurse-submodules | \
   ctags --tag-relative=yes -L - -f"$dir/$$.tags" --languages=javascript,sql,c,c++
 mv "$dir/$$.tags" "$dir/tags"
