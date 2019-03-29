@@ -67,5 +67,10 @@ $changes$
 }
 \newpage
 % Content goes down here.
+$if(toc)$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+\newpage
+$endif$
 $body$
 \end{document}
