@@ -36,7 +36,6 @@ intel-ucode
 libfec-git
 libreoffice-fresh
 libudev0-shim
-llvm
 lrzsz
 ltspice
 make
@@ -46,7 +45,7 @@ network-manager-applet
 openssh
 p7zip
 pacgraph
-pandoc
+pandoc-bin
 patch
 powerline
 projectlibre
