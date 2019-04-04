@@ -1,0 +1,45 @@
+#!/bin/bash
+
+OG_DIR=`pwd`
+
+case $1 in
+    ''|*[!0-9]*) ;;
+    *) export DEPTH=$1 ;;
+esac
+
+if [ ! -z $DEPTH ]; then
+    if [ ! -z $3 ]; then
+        for f in "${@:3}"; do
+            cp "${f}" /home/dillon/.bin/pandoc_template/
+        done
+        cd /home/dillon/.bin/pandoc_template
+        pandoc -s --toc --toc-depth="${DEPTH}" -f markdown -t latex --template lassi_template.tex "${@:3}" | ./fix_table.py > out.ltx
+        pdflatex out.ltx > /dev/null && pdflatex out.ltx > /dev/null
+        mv out.pdf "${OG_DIR}"/"${2}"
+        rm -f out*
+        for f in "${@:3}"; do
+            rm "${f}"
+        done
+        cd "${OG_DIR}"
+    else
+        echo "No input files"
+    fi
+else
+    if [ ! -z $2 ]; then
+        for f in "${@:2}"; do
+            cp "${f}" /home/dillon/.bin/pandoc_template/
+        done
+        cd /home/dillon/.bin/pandoc_template
+        pandoc -s -f markdown -t latex --template lassi_template.tex "${@:2}" | ./fix_table.py > out.ltx
+        pdflatex out.ltx > /dev/null && pdflatex out.ltx > /dev/null
+        mv out.pdf "${OG_DIR}"/"${1}"
+        rm -f out*
+        for f in "${@:2}"; do
+            rm "${f}"
+        done
+        cd "${OG_DIR}"
+    else
+        echo "No input files"
+    fi
+fi
+
