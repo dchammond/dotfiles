@@ -9,7 +9,7 @@ let b:did_indent = 1
 
 setlocal indentexpr=GetMipsIndent()
 setlocal indentkeys=!^F,o,O,<:>,0#,=,*<Return>
-setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 if exists("*GetMipsIndent")
   finish

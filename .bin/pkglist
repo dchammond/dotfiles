@@ -8,9 +8,11 @@ autoconf
 automake
 bc
 bison
+boost
 ccstudio
 clinfo
 cloc
+cmake
 compton
 ctags
 diffpdf
@@ -25,7 +27,6 @@ firefox
 flex
 fluxgui
 glxinfo
-gnuradio
 gotop-bin
 grub
 hexyl
@@ -39,6 +40,7 @@ libudev0-shim
 lrzsz
 ltspice
 make
+mesen
 mtd-utils
 neofetch
 network-manager-applet
@@ -47,9 +49,11 @@ p7zip
 pacgraph
 pandoc-bin
 patch
+pkgconf
 powerline
 projectlibre
 python-numpy
+python2-cheetah
 python2-lxml
 quartus-free
 reflector
