@@ -44,6 +44,7 @@ mesen
 mtd-utils
 neofetch
 network-manager-applet
+networkmanager-openconnect
 openssh
 p7zip
 pacgraph
