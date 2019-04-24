@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo -v
+sudo ip link set wlp3s0 up
+sudo systemctl start NetworkManager.service
+

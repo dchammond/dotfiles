@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo -v
+sudo systemctl stop NetworkManager.service
+sudo ip link set wlp3s0 down
+
