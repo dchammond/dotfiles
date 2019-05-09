@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "pdfnup --nup 4x4 --suffix '4x4' --batch <pdf>"
