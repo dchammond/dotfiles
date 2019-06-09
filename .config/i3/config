@@ -159,6 +159,9 @@ bindsym mod1+shift+8 move container to workspace $ws18
 bindsym mod1+shift+9 move container to workspace $ws19
 bindsym mod1+shift+0 move container to workspace $ws20
 
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Right move workspace to output right
+
 # reload the configuration file
 bindsym $mod+shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
