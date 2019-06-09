@@ -1,4 +1,5 @@
 alsa-firmware
+arandr
 arp-scan
 arrayfire
 aurphan
@@ -6,6 +7,7 @@ autoconf
 automake
 bc
 cmake
+code
 compton
 ctags
 diffpdf
@@ -13,6 +15,7 @@ dos2unix
 doxygen
 dpkg
 exfat-utils
+extremetuxracer
 fff
 firefox
 fluxgui
@@ -25,6 +28,7 @@ i3status-rust-git
 intel-ucode
 libreoffice-fresh
 libudev0-shim
+links
 lrzsz
 ltspice
 make
@@ -38,10 +42,12 @@ pandoc-bin
 patch
 pkgconf
 powerline
+pv
 python-numpy
 python2-cheetah
 python2-lxml
 reflector
+rpcsvc-proto
 rustup
 screen
 scrot
