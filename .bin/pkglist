@@ -7,7 +7,6 @@ autoconf
 automake
 bc
 cmake
-code
 compton
 ctags
 diffpdf
@@ -30,8 +29,8 @@ libreoffice-fresh
 libudev0-shim
 links
 lrzsz
-ltspice
 make
+mtd-utils
 neofetch
 network-manager-applet
 networkmanager-openconnect
