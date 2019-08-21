@@ -34,6 +34,7 @@ mtd-utils
 neofetch
 network-manager-applet
 networkmanager-openconnect
+nordvpn-bin
 openssh
 p7zip
 pacgraph
@@ -53,6 +54,7 @@ scrot
 socat
 spotify
 tcpdump
+telegram-desktop
 termite
 texlive-bibtexextra
 texlive-fontsextra
