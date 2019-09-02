@@ -38,14 +38,15 @@ nordvpn-bin
 openssh
 p7zip
 pacgraph
-pandoc-bin
 patch
 pkgconf
 powerline
 pv
-python-numpy
+python-scikit-image
+python-scikit-learn
 python2-cheetah
 python2-lxml
+quartus-free
 reflector
 rpcsvc-proto
 rustup
