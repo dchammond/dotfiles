@@ -6,6 +6,7 @@ aurphan
 autoconf
 automake
 bc
+cloc
 cmake
 compton
 ctags
@@ -46,7 +47,7 @@ python-scikit-image
 python-scikit-learn
 python2-cheetah
 python2-lxml
-quartus-free
+rdesktop
 reflector
 rpcsvc-proto
 rustup
@@ -71,6 +72,7 @@ thefuck
 tldr
 tlp
 tmux
+transmission-qt
 unzip
 valgrind
 vlc
@@ -115,5 +117,6 @@ xorg-xwud
 xpdf
 xsel
 yay-bin
+zerotier-one
 zip
 zsh-pure-prompt
