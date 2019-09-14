@@ -50,7 +50,7 @@ plugins=(git ruby golang django scala gem history history-substring-search termi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:"$PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -94,12 +94,6 @@ PROMPT='%(1j.[%j] .)${PURE_PROMPT_SYMBOL}'
 #     && source ~/.iterm2_shell_integration.zsh
 
 # My aliases
-command -v brew > /dev/null \
-    && alias brews='brew list -1' \
-    && alias buball='brew upgrade; brew cleanup; brew doctor' \
-    && alias buses='brew uses --installed --recursive --include-build --include-optional' \
-    && export PATH=$PATH:/usr/local/opt
-
 alias cd..='cd ..'
 
 test -e ~/.bin \
@@ -110,9 +104,6 @@ test -e ~/.cargo \
     && export CARGO_HOME=~/.cargo/
 
 export PATH=$PATH:~/.local/bin
-
-test -e ~/.rustup \
-    && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 
 command -v rustup > /dev/null \
     && alias rup='rustup update && cargo install-update -a'
@@ -138,7 +129,7 @@ command -v fuck > /dev/null \
 command -v /usr/local/bin/ctags > /dev/null \
     && alias ctags="/usr/local/bin/ctags"
 
-export TERM=xterm-256color
+export TERM=linux
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=$LANG
@@ -151,19 +142,7 @@ export SHELL="/usr/bin/zsh"
 test -e /usr/local/bin/vim \
     && export SHELL="/usr/local/bin/zsh"
 
-test -e /usr/local/opt/nvm/nvm.sh \
-    && export NVM_DIR=~/.nvm \
-    && . /usr/local/opt/nvm/nvm.sh
-
 export DEFAULT_USER=dillon
-
-test -e /class/cs225/etc/semester \
-    && source /class/cs225/etc/semester > /dev/null \
-    && export PATH=/class/cs225/llvm/bin:$PATH:/class/cs225/software/graphviz-2.38.0/bin:/class/cs225/software/lein-2.5.3/bin
-
-test -e /class/cs233/setup \
-    && source /class/cs233/setup > /dev/null \
-    && export PATH=/class/cs233/Linux/bin:$PATH
 
 export LANG=en_US.UTF-8
 
