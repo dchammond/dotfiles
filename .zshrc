@@ -128,8 +128,10 @@ command -v fuck > /dev/null \
 
 command -v /usr/local/bin/ctags > /dev/null \
     && alias ctags="/usr/local/bin/ctags"
-
-export TERM=linux
+if [[ "$TERM" != tmux* ]] && [[ "$TERM" != screen* ]]
+then
+    export TERM=linux
+fi
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=$LANG
