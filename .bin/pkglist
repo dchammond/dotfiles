@@ -22,6 +22,7 @@ openssh
 patch
 pkgconf
 pulseaudio
+reflector
 rustup
 screen
 socat
