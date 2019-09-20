@@ -49,4 +49,4 @@ set updatetime=10
 inoremap kj <esc>
 vmap <C-c> "*y <CR><CR>
 vmap <C-v> :!pbpaste <CR>
-" colorscheme codedark
+colorscheme ron

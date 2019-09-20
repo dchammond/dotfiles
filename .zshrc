@@ -128,8 +128,10 @@ command -v fuck > /dev/null \
 
 command -v /usr/local/bin/ctags > /dev/null \
     && alias ctags="/usr/local/bin/ctags"
-if [[ "$TERM" != tmux* ]] && [[ "$TERM" != screen* ]]
+if [[ "$TERM" == tmux* ]] || [[ "$TERM" == screen* ]]
 then
+    export TERM=tmux-256color
+else
     export TERM=linux
 fi
 

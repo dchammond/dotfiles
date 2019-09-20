@@ -17,7 +17,6 @@ hexyl
 htop
 magic-wormhole
 make
-opencl-mesa
 openssh
 patch
 pkgconf
@@ -31,7 +30,6 @@ tldr
 tmux
 unzip
 valgrind
-vulkan-radeon
 wget
 whois
 yay-bin
