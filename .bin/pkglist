@@ -33,5 +33,6 @@ valgrind
 wget
 whois
 yay-bin
+zerotier-one
 zip
 zsh-pure-prompt
