@@ -132,7 +132,7 @@ if [[ "$TERM" == tmux* ]] || [[ "$TERM" == screen* ]]
 then
     export TERM=tmux-256color
 else
-    export TERM=linux
+    export TERM=xterm-256color
 fi
 
 export LANG=en_US.UTF-8
