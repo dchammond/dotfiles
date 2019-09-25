@@ -3,11 +3,11 @@
 set -e
 
 save() {
-    yay -Qqet | grep -v "$(yay -Qqg base)" > /home/$USER/.bin/pkglist
+    yay -Qqet > /home/$USER/.bin/pkglist
 }
 
 restore() {
-    cat /home/dillon/.bin/pkglist | grep -v "$(yay -Qqet)" | yay -S -
+    cat /home/dillon/.bin/pkglist | yay -S -
 }
 
 case "$1" in
