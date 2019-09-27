@@ -10,7 +10,6 @@ ctags
 dos2unix
 exfat-utils
 fakeroot
-feh
 fff
 firefox
 flex
@@ -32,6 +31,7 @@ man-db
 man-pages
 mdadm
 nano
+neofetch
 netctl
 openssh
 patch
@@ -64,7 +64,6 @@ xf86-video-fbdev
 xfsprogs
 xorg-server
 xorg-xinit
-xorg-xrandr
 yay-bin
 zerotier-one
 zip
