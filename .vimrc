@@ -46,6 +46,7 @@ set si
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch  " highlight matches
 set updatetime=10
+set tags=tags;
 inoremap kj <esc>
 vmap <C-c> "*y <CR><CR>
 vmap <C-v> :!pbpaste <CR>
