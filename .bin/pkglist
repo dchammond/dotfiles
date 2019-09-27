@@ -64,6 +64,7 @@ xf86-video-fbdev
 xfsprogs
 xorg-server
 xorg-xinit
+xorg-xrandr
 yay-bin
 zerotier-one
 zip
