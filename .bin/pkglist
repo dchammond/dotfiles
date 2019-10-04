@@ -1,4 +1,5 @@
 amd-ucode
+arm-linux-gnueabihf-gcc
 autoconf
 automake
 bc
@@ -7,6 +8,7 @@ cloc
 cmake
 compton
 ctags
+docker
 dos2unix
 exfat-utils
 fakeroot
@@ -25,6 +27,7 @@ licenses
 linux
 logrotate
 lvm2
+lzip
 magic-wormhole
 make
 man-db
@@ -48,6 +51,7 @@ termite
 thefuck
 tldr
 tmux
+tree
 ttf-font-awesome-4
 unzip
 usbutils
