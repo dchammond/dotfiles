@@ -2,9 +2,11 @@ alsa-firmware
 arandr
 arp-scan
 arrayfire
+at
 aurphan
 autoconf
 automake
+base
 bc
 cloc
 cmake
@@ -14,6 +16,7 @@ diffpdf
 dos2unix
 doxygen
 dpkg
+dtc
 exfat-utils
 extremetuxracer
 fff
@@ -29,7 +32,9 @@ intel-ucode
 libreoffice-fresh
 libudev0-shim
 links
+linux-headers
 lrzsz
+magic-wormhole
 make
 mtd-utils
 neofetch
@@ -73,10 +78,12 @@ tldr
 tlp
 tmux
 transmission-qt
+tree
 unzip
 valgrind
 vlc
 wget
+which
 whois
 xautolock
 xbindkeys
