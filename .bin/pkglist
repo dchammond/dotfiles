@@ -2,6 +2,7 @@ amd-ucode
 arm-linux-gnueabihf-gcc
 autoconf
 automake
+base
 bc
 bison
 cloc
@@ -21,10 +22,7 @@ hexyl
 htop
 i3-gaps
 i3status-rust
-iputils
 jfsutils
-licenses
-linux
 logrotate
 lvm2
 lzip
@@ -36,6 +34,7 @@ mdadm
 nano
 neofetch
 netctl
+nordvpn-bin
 openssh
 patch
 pkgconf
