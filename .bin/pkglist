@@ -1,10 +1,13 @@
+alsa-firmware
 amd-ucode
 arm-linux-gnueabihf-gcc
+atril
 autoconf
 automake
 base
 bc
 bison
+clang
 cloc
 cmake
 compton
@@ -67,6 +70,7 @@ xf86-video-fbdev
 xfsprogs
 xorg-server
 xorg-xev
+xorg-xhost
 xorg-xinit
 yay-bin
 zerotier-one
