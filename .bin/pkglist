@@ -75,7 +75,7 @@ texlive-publishers
 texlive-science
 thefuck
 tldr
-tlp
+tlpui-git
 tmux
 transmission-qt
 tree
@@ -83,7 +83,6 @@ unzip
 valgrind
 vlc
 wget
-which
 whois
 xautolock
 xbindkeys

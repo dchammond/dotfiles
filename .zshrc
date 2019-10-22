@@ -176,4 +176,6 @@ export FFF_CD_FILE=~/.fff_d
 export FFF_TRASH=/tmp
 f() { fff "$@"; cd "$(cat ~/.fff_d)"; }
 
+alias rg="rg --no-ignore"
+
 return 0;
