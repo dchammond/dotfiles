@@ -46,7 +46,7 @@ ZSH_THEME=""
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby golang django scala gem history history-substring-search terminalapp brew nanoc)
+plugins=(git history history-substring-search)
 
 # User configuration
 

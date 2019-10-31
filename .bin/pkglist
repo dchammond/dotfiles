@@ -53,6 +53,7 @@ termite
 thefuck
 tldr
 tmux
+transmission-qt
 tree
 ttf-font-awesome-4
 unzip
@@ -61,7 +62,6 @@ valgrind
 vi
 vim
 wget
-which
 whois
 xautolock
 xbindkeys
