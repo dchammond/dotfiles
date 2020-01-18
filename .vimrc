@@ -32,6 +32,7 @@ let g:airline_theme='deus'
 " let g:syntastic_check_on_open = 0 "disabled
 " let g:syntastic_check_on_wq = 0
 
+colorscheme ron
 syntax enable
 set encoding=utf-8
 set fileencoding=utf-8
@@ -41,6 +42,7 @@ set statusline=%f
 set ruler
 set number
 set cursorline
+hi CursorLine cterm=None ctermbg=black ctermfg=blue
 set ai
 set si
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
@@ -49,4 +51,3 @@ set updatetime=10
 inoremap kj <esc>
 vmap <C-c> "*y <CR><CR>
 vmap <C-v> :!pbpaste <CR>
-colorscheme ron
