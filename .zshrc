@@ -155,7 +155,7 @@ test -e /usr/local/opt/nvm/nvm.sh \
     && export NVM_DIR=~/.nvm \
     && . /usr/local/opt/nvm/nvm.sh
 
-export DEFAULT_USER=dillon
+export DEFAULT_USER=dillonh2
 
 test -e /class/cs225/etc/semester \
     && source /class/cs225/etc/semester > /dev/null \
