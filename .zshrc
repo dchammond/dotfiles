@@ -55,6 +55,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libe
 
 source $ZSH/oh-my-zsh.sh
 
+fpath+=("$HOME/.zsh/pure")
+
 autoload -U promptinit; promptinit
 
 PURE_PROMPT_SYMBOL='%(?.%F{green}.%F{red})>%f '
