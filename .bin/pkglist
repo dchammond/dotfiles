@@ -21,14 +21,12 @@ exfat-utils
 fff
 firefox
 fluxgui
-fx_cast
 ghc
-gotop-bin
 grub
 hexyl
 htop
 i3-gaps
-i3status-rust-git
+i3status-rust
 intel-ucode
 libreoffice-fresh
 libudev0-shim
@@ -78,6 +76,7 @@ tmux
 traceroute
 transmission-qt
 tree
+ttf-font-awesome-4
 unzip
 valgrind
 vi
@@ -128,6 +127,7 @@ xorg-xwud
 xpdf
 xsel
 yay-bin
+ytop
 zerotier-one
 zip
 zsh-pure-prompt
