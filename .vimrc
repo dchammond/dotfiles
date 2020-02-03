@@ -7,7 +7,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 " Plug 'vim-syntastic/syntastic'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chrisbra/colorizer'
@@ -32,6 +32,7 @@ let g:airline_theme='deus'
 " let g:syntastic_check_on_open = 0 "disabled
 " let g:syntastic_check_on_wq = 0
 
+colorscheme ron
 syntax enable
 set encoding=utf-8
 set fileencoding=utf-8
@@ -41,6 +42,7 @@ set statusline=%f
 set ruler
 set number
 set cursorline
+hi CursorLine cterm=None ctermbg=black ctermfg=blue
 set ai
 set si
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab

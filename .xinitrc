@@ -59,6 +59,7 @@ export TERMINAL=termite
 xbindkeys
 xrandr --dpi 125.37
 compton --config ~/.config/compton/compton.conf -b
+xset +fp /usr/share/fonts/misc
 ~/.fehbg &
 fluxgui &
 xautolock -time 10 "i3lock -c 0a0a0a" &

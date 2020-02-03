@@ -1,6 +1,6 @@
 alsa-firmware
 amd-ucode
-arm-linux-gnueabihf-gcc
+arandr
 atril
 autoconf
 automake
@@ -10,7 +10,6 @@ bison
 clang
 cloc
 cmake
-compton
 ctags
 docker
 dos2unix
@@ -19,18 +18,19 @@ fakeroot
 fff
 firefox
 flex
-gotop-bin
 grub
 hexyl
 htop
 i3-gaps
 i3status-rust
 jfsutils
+libreoffice-fresh
 logrotate
+lrzsz
+lshw
 lvm2
 lzip
 magic-wormhole
-make
 man-db
 man-pages
 mdadm
@@ -38,8 +38,9 @@ nano
 neofetch
 netctl
 nordvpn-bin
-openssh
-patch
+oldschool-pc-fonts
+openconnect
+picom
 pkgconf
 powerline
 reflector
@@ -47,8 +48,10 @@ reiserfsprogs
 ripgrep
 rustup
 screen
+signal-desktop
 socat
 spotify
+telegram-desktop
 termite
 thefuck
 tldr
@@ -61,6 +64,7 @@ usbutils
 valgrind
 vi
 vim
+vlc
 wget
 whois
 xautolock
@@ -73,6 +77,7 @@ xorg-xev
 xorg-xhost
 xorg-xinit
 yay-bin
+ytop
 zerotier-one
 zip
 zsh-pure-prompt

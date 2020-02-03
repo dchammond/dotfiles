@@ -1,0 +1,4 @@
+#!/usr/bin/zsh
+
+rdesktop -g 1280x720 -P -z -x l -r sound:off 10.147.18.201:3389
+
