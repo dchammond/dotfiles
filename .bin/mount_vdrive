@@ -2,4 +2,6 @@ sudo -v
 
 read -s -p "Enter password: " PASS
 
+sudo mkdir -p /mnt/vdrive
+
 sudo mount -t cifs //ad.uillinois.edu/engr-ews/cubesat /mnt/vdrive -o username=dillonh2,password=$PASS
