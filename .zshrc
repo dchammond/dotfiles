@@ -178,4 +178,6 @@ f() { fff "$@"; cd "$(cat ~/.fff_d)"; }
 
 alias rg="rg --no-ignore"
 
+export MOZ_ENABLE_WAYLAND=1
+
 return 0;
