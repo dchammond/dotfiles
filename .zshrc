@@ -111,9 +111,6 @@ test -e ~/.cargo \
 
 export PATH=$PATH:~/.local/bin
 
-test -e ~/.rustup \
-    && export RUST_SRC_PATH="~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
-
 command -v rustup > /dev/null \
     && alias rup='rustup update && cargo install-update -a'
 
@@ -156,16 +153,6 @@ test -e /usr/local/opt/nvm/nvm.sh \
     && . /usr/local/opt/nvm/nvm.sh
 
 export DEFAULT_USER=dillon
-
-test -e /class/cs225/etc/semester \
-    && source /class/cs225/etc/semester > /dev/null \
-    && export PATH=/class/cs225/llvm/bin:$PATH:/class/cs225/software/graphviz-2.38.0/bin:/class/cs225/software/lein-2.5.3/bin
-
-test -e /class/cs233/setup \
-    && source /class/cs233/setup > /dev/null \
-    && export PATH=/class/cs233/Linux/bin:$PATH
-
-export LANG=en_US.UTF-8
 
 test -e /usr/bin/firefox \
     && export BROWSER=firefox
