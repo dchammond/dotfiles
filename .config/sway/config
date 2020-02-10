@@ -262,8 +262,9 @@ mode "$mode_system" {
 
 bindsym $mod+Delete mode "$mode_system"
 
-for_window [class="(?i)firefox"] border pixel 0
-for_window [class="(?i)termite"] border pixel 0
+for_window [app_id="(?i)zenity"] floating enable
+for_window [app_id="(?i)firefox"] border pixel 0
+for_window [app_id="(?i)termite"] border pixel 0
 
 #
 # Autostart
