@@ -167,4 +167,6 @@ alias rg="rg --no-ignore"
 
 export MOZ_ENABLE_WAYLAND=1
 
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 return 0;
