@@ -285,4 +285,8 @@ bindsym --locked XF86AudioPrev exec playerctl previous
 bindsym --locked XF86MonBrightnessUp exec --no-startup-id brightnessctl s 10%+
 bindsym --locked XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
 
+input "1102:4619:DLL079F:01_044E:120B" {
+    scroll_factor 0.5
+}
+
 include /etc/sway/config.d/*
