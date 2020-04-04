@@ -11,7 +11,6 @@ clang
 cloc
 cmake
 ctags
-docker
 dos2unix
 exfat-utils
 fakeroot
@@ -59,6 +58,7 @@ tmux
 transmission-qt
 tree
 ttf-font-awesome-4
+ttf-hack
 unzip
 usbutils
 valgrind
