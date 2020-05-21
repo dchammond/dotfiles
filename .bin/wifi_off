@@ -2,5 +2,5 @@
 
 sudo -v
 sudo systemctl stop NetworkManager.service
-sudo ip link set wlp3s0 down
+sudo ip link set wlp2s0 down
 
