@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+set -ex
+
+gpg --output "$2" -d "$1"

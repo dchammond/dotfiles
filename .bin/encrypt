@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+set -ex
+
+gpg --cipher-algo AES256 --output "$1".enc --symmetric "$1"
