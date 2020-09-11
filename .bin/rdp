@@ -1,4 +1,4 @@
 #!/usr/bin/zsh
 
-xfreerdp /u:dillo /v:10.147.18.201:3389 /size:1920x1080 /p:$(zenity --entry --title="Windows Password" --text="Enter your password:" --hide-text)
+rdesktop -g 1280x720 -P -z -x l -r sound:off 10.147.18.201:3389
 
