@@ -10,3 +10,11 @@
 	autocrlf = false
 [pull]
 	rebase = false
+[alias]
+    ls = log --pretty=format:'%Cred%h %C(green)%ad %Creset %s%C(bold yellow)%d %C(bold blue)%Creset' --date=relative
+    lg = log --color --graph --pretty=format:'%Cred%h %C(bold yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+    l = log --color --graph --decorate --oneline
+    la = log --decorate --color --patch-with-stat
+    ll = log --graph --decorate --color --stat --abbrev-commit
+    lb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+    c = commit --verbose
