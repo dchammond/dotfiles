@@ -105,6 +105,9 @@ test -e ~/.cargo \
 
 export PATH=$PATH:~/.local/bin
 
+test -e /opt/Xilinx/Vivado/latest \
+    && source /opt/Xilinx/Vivado/latest/settings64.sh
+
 command -v rustup > /dev/null \
     && alias rup='rustup update && cargo install-update -a'
 
