@@ -1,0 +1,9 @@
+#!/usr/bin/zsh
+sudo -v
+docker run -ti --cap-add=NET_ADMIN --cap-add=SYS_MODULE --device /dev/net/tun --name vpn --sysctl net.ipv4.conf.all.rp_filter=2 -e USER=dillonhammond@gmail.com -e PASS='-ZmFRQBZRGpQFaEg38!N' -e CONNECT=United_States -e TECHNOLOGY=NordLynx -d bubuntux/nordvpn:3.7.4
+/home/dillon/.bin/mount_movies
+xhost +local:
+docker run -it --rm -e DISPLAY=unix$DISPLAY -e XSOCK=$XSOCK -e XDG_RUNTIME_DIR:$XDG_RUNTIME_DIR -v /tmp/.X11-unix:/tmp/.X11-unix -v /mnt/windows-movies:/home/pirate/movies --net=container:vpn torrent
+/home/dillon/.bin/umount_movies
+docker stop vpn
+docker container prune

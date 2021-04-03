@@ -1,0 +1,5 @@
+sudo -v
+
+read -s -p "Enter password: " PASS
+
+sudo mount -t cifs //DESKTOP-J6UAPK1/Movies /mnt/windows-movies -o username=dillo,password=$PASS

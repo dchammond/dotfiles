@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
 sudo -v
-sudo openconnect vpn.cites.illinois.edu --user dillonh2 --authgroup 1_SplitTunnel_Default
+# sudo openconnect vpn.illinois.edu --user dillonh2 --authgroup 1_SplitTunnel_Default
+sudo openconnect vpn.illinois.edu --user dillonh2 --authgroup 3_TunnelAll

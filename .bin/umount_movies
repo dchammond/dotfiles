@@ -1,0 +1,3 @@
+sudo -v
+
+sudo umount /mnt/windows-movies
