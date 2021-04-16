@@ -169,4 +169,8 @@ export MOZ_ENABLE_WAYLAND=1
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+alias l="exa -l --group-directories-first --group --grid"
+alias la="exa -al --group-directories-first --group --grid"
+alias ll="exa -l --group-directories-first -T --level=2 --grid"
+
 return 0;
