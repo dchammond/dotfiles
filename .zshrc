@@ -164,4 +164,8 @@ f() { fff "$@"; cd "$(cat ~/.fff_d)"; }
 
 alias rg="rg --no-ignore"
 
+alias l="exa -l --group-directories-first --group"
+alias la="exa -al --group-directories-first --group"
+alias ll="exa -l --group-directories-first -T --level=2"
+
 return 0;
