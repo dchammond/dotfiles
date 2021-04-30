@@ -57,7 +57,9 @@ fi
 # My stuff
 export TERMINAL=termite
 xbindkeys
-xrandr --dpi 125.37
+#xrandr --output DVI-2-1 --auto --output DisplayPort-0 --dpi 125.37 --right-of DVI-I-2-2
+#xrandr --output DVI-2-1 --auto --output DisplayPort-0 --off
+xrandr --output lg-left --mode 2560x1440 --rate 144 --dpi 120 --auto --output samsung-right --mode 3840x2160 --rate 60 --dpi 120 --auto
 compton --config ~/.config/compton/compton.conf -b
 xset +fp /usr/share/fonts/misc
 ~/.fehbg &
