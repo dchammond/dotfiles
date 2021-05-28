@@ -16,7 +16,7 @@ block = "sound"
 [[block]]
 block = "net"
 device = "enp5s0"
-format = "{ip} {bitrate} {speed_down;K} {speed_up;K}"
+format = "{ip} {bitrate} {speed_down;K*b} {speed_up;K*b}"
 interval = 5
 
 [[block]]
@@ -47,7 +47,7 @@ icons = true
 clickable = false
 warning_mem = 75
 critical_mem = 90
-format_mem = "{mem_used}/{mem_total:1}"
+format_mem = "{mem_used:4}/{mem_total:1}"
 interval = 5
 
 [[block]]
