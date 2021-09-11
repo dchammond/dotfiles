@@ -4,17 +4,17 @@ icons = "awesome"
 [[block]]
 block = "net"
 device = "wlp3s0"
-ssid = true
-ip = true
-speed_up = false
-graph_up = false
-speed_down = false
+#ssid = true
+#ip = true
+#speed_up = false
+#graph_up = false
+#speed_down = false
 interval = 15
 
 [[block]]
 block = "battery"
 interval = 60
-format = "{percentage}% {time}"
+format = "{percentage} {time}"
 
 [[block]]
 block = "disk_space"
@@ -29,12 +29,12 @@ block = "cpu"
 interval = 10
 warning  = 75
 critical = 90
-frequency = true
+#frequency = true
 
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mum}MB/{MTm}MB"
+#format_mem = "{Mum}MB/{MTm}MB"
 clickable = false
 interval = 10
 warning_mem = 75

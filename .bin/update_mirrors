@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-sudo reflector --verbose --sort rate -a 1 -n 30 --save /etc/pacman.d/mirrorlist
+sudo reflector --completion-percent=98 --verbose --sort rate --save /etc/pacman.d/mirrorlist

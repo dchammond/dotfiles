@@ -179,3 +179,4 @@ f() { fff "$@"; cd "$(cat ~/.fff_d)"; }
 alias rg="rg --no-ignore"
 
 return 0;
+
