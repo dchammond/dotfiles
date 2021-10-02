@@ -33,7 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # My stuff
-export TERMINAL=termite
+export TERMINAL=alacritty
 xbindkeys
 xrandr --output DisplayPort-1 --mode 3840x2160 --rate 60 --primary # Samsung
 xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --scale-from 3840x2160 --right-of DisplayPort-1 # LG
