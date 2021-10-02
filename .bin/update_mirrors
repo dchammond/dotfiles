@@ -1,2 +1,2 @@
 #!/usr/bin/env zsh
-sudo reflector --verbose --completion-percent=98 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --latest 10 --country "United States" --protocol https --sort rate --save /etc/pacman.d/mirrorlist
