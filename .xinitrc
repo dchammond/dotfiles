@@ -55,7 +55,7 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 # My stuff
-export TERMINAL=termite
+export TERMINAL=alacritty
 xbindkeys
 xrandr --dpi 125.37
 compton --config ~/.config/compton/compton.conf -b
