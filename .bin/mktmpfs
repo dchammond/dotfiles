@@ -1,0 +1,3 @@
+sudo -v
+
+sudo mount -t tmpfs tmpfs $(realpath "${1}") -o uid=$(whoami)

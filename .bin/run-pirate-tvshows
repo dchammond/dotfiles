@@ -6,4 +6,4 @@ xhost +local:
 docker run -it --rm -e DISPLAY=unix$DISPLAY -e XSOCK=$XSOCK -e XDG_RUNTIME_DIR:$XDG_RUNTIME_DIR -v /tmp/.X11-unix:/tmp/.X11-unix -v /mnt/windows-tvshows:/home/pirate/tvshows --net=container:vpn torrent
 /home/dillon/.bin/umount_tvshows
 docker stop vpn
-docker container prune
+yes | docker container prune
