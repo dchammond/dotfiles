@@ -32,6 +32,8 @@ let g:airline_theme='deus'
 " let g:syntastic_check_on_open = 0 "disabled
 " let g:syntastic_check_on_wq = 0
 
+let c_no_curly_error=1
+
 colorscheme ron
 syntax enable
 set encoding=utf-8
