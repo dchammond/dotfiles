@@ -36,8 +36,9 @@ fi
 export TERMINAL=alacritty
 xbindkeys
 #xrandr --output DisplayPort-1 --mode 3840x2160 --rate 60 --primary # Samsung
-xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60 --scale-from 2560x1440 --pos 0x0 # Phillips
-xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --primary --pos 2560x0 # LG
+# --scale-from 2560x1440
+xrandr --output DisplayPort-0 --mode 2560x1440 --rate 144 --primary --pos 0x0 # LG
+xrandr --output DisplayPort-1 --mode 2560x1440 --rate 75 --pos 2560x0 # Scepter
 picom --config ~/.config/picom/picom.conf -b
 xset +fp /usr/share/fonts/misc
 ~/.fehbg &
