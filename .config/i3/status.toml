@@ -15,8 +15,8 @@ block = "sound"
 
 [[block]]
 block = "net"
-device = "enp5s0"
-format = "{ip} {bitrate} {speed_down;K*b} {speed_up;K*b}"
+device = "wlp5s0"
+format = "{ssid} {frequency} {ip} {signal_strength} {speed_down;K*b} {speed_up;K*b}"
 interval = 5
 
 [[block]]
@@ -39,6 +39,7 @@ block = "temperature"
 collapsed = false
 format = "{min} min {max} max {average} avg"
 interval = 10
+inputs = ["CPUTIN"]
 
 [[block]]
 block = "memory"
