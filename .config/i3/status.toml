@@ -1,14 +1,13 @@
+[theme]
 theme = "solarized-dark"
-icons = "awesome"
+
+[icons]
+icons = "awesome4"
 
 [[block]]
 block = "music"
 player = "spotify"
-marquee = true
-marquee_interval = 3
-marquee_speed = 0.1
-max_width = 30
-buttons = ["prev", "play", "next"]
+format = " $icon {$combo.str(max_w:30,rot_interval:0.2) $prev $play $next |}"
 
 [[block]]
 block = "sound"
@@ -16,43 +15,34 @@ block = "sound"
 [[block]]
 block = "net"
 device = "wlp5s0"
-format = "{ssid} {frequency} {ip} {signal_strength} {speed_down;K*b} {speed_up;K*b}"
+format = " $icon {$ssid $frequency $ip $signal_strength $speed_down.eng(prefix:Ki) $speed_up.eng(prefix:Ki) |}"
 interval = 5
 
 [[block]]
 block = "disk_space"
 path = "/"
 info_type = "available"
-unit = "GB"
-format = "{icon} {used}/{total} ({available} free)"
+format = " $icon {$used/$total ($available free) |}"
 interval = 60
 
 [[block]]
 block = "cpu"
-warning  = 75
-critical = 90
-format = "{barchart} {utilization} {frequency}"
+format = " $icon {$barchart $utilization $frequency $boost |}"
 interval = 5
 
 [[block]]
 block = "temperature"
-collapsed = false
-format = "{min} min {max} max {average} avg"
+format = " $icon {$min min $max max $average avg |}"
 interval = 10
 inputs = ["CPUTIN"]
 
 [[block]]
 block = "memory"
-display_type = "memory"
-icons = true
-clickable = false
-warning_mem = 75
-critical_mem = 90
-format_mem = "{mem_used:4}/{mem_total:1}"
+format = " $icon {$mem_used/$mem_total |}"
 interval = 5
 
 [[block]]
 block = "time"
-format = "%a %b %d %r"
+format = " $icon $timestamp.datetime(f:'%a %b %d %r') "
 interval = 1
 
