@@ -32,9 +32,11 @@ let g:airline_theme='deus'
 " let g:syntastic_check_on_open = 0 "disabled
 " let g:syntastic_check_on_wq = 0
 
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 let c_no_curly_error=1
 
-colorscheme ron
 syntax enable
 set encoding=utf-8
 set fileencoding=utf-8
@@ -54,4 +56,4 @@ set tags=tags;
 inoremap kj <esc>
 vmap <C-c> "*y <CR><CR>
 vmap <C-v> :!pbpaste <CR>
-colorscheme ron
+colorscheme codedark

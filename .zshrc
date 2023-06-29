@@ -108,6 +108,11 @@ export PATH=$PATH:~/.local/bin
 test -e /opt/Xilinx/Vivado/latest \
     && source /opt/Xilinx/Vivado/latest/settings64.sh
 
+test -e /opt/intelFPGA/latest \
+    && export QSYS_ROOTDIR="/opt/intelFPGA/latest/questa_fse/bin" \
+    && export PATH="$QSYS_ROOTDIR:"$PATH \
+    && export LM_LICENSE_FILE="/home/dillon/.questa_license.dat"
+
 command -v rustup > /dev/null \
     && alias rup='rustup update && cargo install-update -a'
 

@@ -14,8 +14,8 @@ block = "sound"
 
 [[block]]
 block = "net"
-device = "wlp5s0"
-format = " $icon {$ssid $frequency $ip $signal_strength $speed_down.eng(prefix:Ki) $speed_up.eng(prefix:Ki) |}"
+device = "enp6s0"
+format = " $icon {$ip |}"
 interval = 5
 
 [[block]]
